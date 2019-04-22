@@ -9,7 +9,7 @@ public class Registro{
 
 
   // Constructor.
-  public Registro(String username, String password boolean reg){
+  public Registro(String username, String password, boolean reg){
     this.username = username;
     this.password = password;
     this.reg = reg;
