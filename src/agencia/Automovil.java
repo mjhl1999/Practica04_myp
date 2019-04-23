@@ -5,11 +5,11 @@ public class Automovil{
   // El modelo del automovil.
   public String modelo;
   // El año del automovil.
-  public int año;
+  public String año;
 
 
   // Constructor.
-  public Automovil(String marca, String modelo, int año){
+  public Automovil(String marca, String modelo, String año){
     this.marca = marca;
     this.modelo = modelo;
     this.año = año;

@@ -46,7 +46,7 @@ public class Registro{
 
   /** Método que nos dice si ya está registrado el usuario.
   * @param reg el booleano que nos dice si ya está registrado.
-  * @return verdaderp si ya lo está falso en otro caso.
+  * @return verdadero si ya lo está falso en otro caso.
   */
   public boolean Registrado(boolean reg){
     // Creo que puedo regresar solo reg, pues ya es un booleano.
