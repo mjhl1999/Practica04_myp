@@ -13,17 +13,17 @@ public class CotizarSeguro{
   * @return el tipo de seguro.
   */
   public String tipoDeSeguro(String seguro){
-    switch(tipSeg) {
-      case CA:
+    switch(seguro) {
+      case "Cobertura Amplia":
         if(seguro.equals("Cobertura Amplia"))
           return "Cobertura Amplia";
-      case DT:
+      case "Daños a Terceros":
         if(seguro.equals("Daños a Terceros"))
           return "Daños a Terceros";
-      case CL:
+      case "Cobertura Limitada":
         if(seguro.equals("Cobertura Limitada"))
           return "Cobertura Limitada";
-      case CE:
+      case "Cobertura Extendida":
         if(seguro.equals("Cobertura Extendida"))
           return "Cobertura Extendida";
       default:
@@ -35,7 +35,9 @@ public class CotizarSeguro{
   * @return los datos del auto.
   */
   public String datosAuto(Automovil auto){
-    return (auto.getMarca() + auto.getModelo() + auto.getAño());
+    return (auto.getMarca() + "\n" +
+            auto.getModelo() + "\n" +
+            auto.getAño());
   }
 
 

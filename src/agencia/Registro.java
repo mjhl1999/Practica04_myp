@@ -48,7 +48,7 @@ public class Registro{
   * @param reg el booleano que nos dice si ya está registrado.
   * @return verdadero si ya lo está falso en otro caso.
   */
-  public boolean Registrado(boolean reg){
+  public boolean registrado(boolean reg){
     // Creo que puedo regresar solo reg, pues ya es un booleano.
     return (reg) ? true : false;
   }

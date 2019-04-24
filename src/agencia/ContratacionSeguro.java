@@ -23,18 +23,18 @@ public class ContratacionSeguro{
   * @param seguro el tipo de seguro sobre el que se quiere contratar.
   * @return el tipo de seguro.
   */
-  public String tipoDeSeguro(String seguro){
-    switch(tipSeg) {
-      case CA:
+  public String tipoDeSeguro2(String seguro){
+    switch(seguro) {
+      case "Cobertura Amplia":
         if(seguro.equals("Cobertura Amplia"))
           return "Cobertura Amplia";
-      case DT:
+      case "Daños a Terceros":
         if(seguro.equals("Daños a Terceros"))
           return "Daños a Terceros";
-      case CL:
+      case "Cobertura Limitada":
         if(seguro.equals("Cobertura Limitada"))
           return "Cobertura Limitada";
-      case CE:
+      case "Cobertura Extendida":
         if(seguro.equals("Cobertura Extendida"))
           return "Cobertura Extendida";
       default:
@@ -46,7 +46,9 @@ public class ContratacionSeguro{
   * @return los datos del auto.
   */
   public String datosAuto(Automovil auto){
-    return (auto.getMarca() + auto.getModelo() + auto.getAño());
+    return (auto.getMarca() + "\n" +
+            auto.getModelo() + "\n" +
+            auto.getAño());
   }
 
   /** Método que define la forma de pago del seguro.
