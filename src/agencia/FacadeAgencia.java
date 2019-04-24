@@ -49,7 +49,7 @@ public class FacadeAgencia{
     String a;
     a = cotizarSeguro.datosAuto(auto);
 
-    System.out.println("Se preguntó cotizó un seguro con: \n" +
+    System.out.println("Se cotizó un seguro con: \n" +
                       "El tipo de seguro: " + seguro + "\n" +
                       "Los datos del auto: " + "\n" + a + "\n");
   }
