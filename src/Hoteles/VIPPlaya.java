@@ -1,9 +1,9 @@
-public class VIPPlaya extends BPlayaDecorado{
+public class VIPPlaya extends PlayaDecorator{
 
 	BasicoPlaya playa;
 
 	public VIPPlaya(BasicoPlaya playa){
-		super(playa);
+		this.playa = playa;
 	}
 
 	public double darCosto(){
