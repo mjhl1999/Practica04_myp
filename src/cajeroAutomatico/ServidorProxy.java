@@ -29,7 +29,7 @@ public class ServidorProxy implements Servidor{
         cajero = new Cajero(cuenta, saldo, retiro);
       cajero.realizarRetiro(cuenta, retiro);
     }else{
-      System.out.println("No cuenta con saldo suficiente");
+      System.out.println("No cuenta con saldo suficiente \n");
       return;
     }
   }
@@ -39,8 +39,6 @@ public class ServidorProxy implements Servidor{
   * @param retiro el saldo actual.
   */
   public boolean saldoSuficiente(int cuenta, int retiro){
-  	int total = saldo-retiro;
-
     if(saldo >= retiro)
       return true;
     else
