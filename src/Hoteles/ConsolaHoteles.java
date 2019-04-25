@@ -28,15 +28,16 @@ public class ConsolaHoteles{
 
           System.out.println( "\n" +
                               "Ahora ingrese el número de noches que se hospedará, \n" +
-                              "calcularemos el costo y los servicios que tiene su habitación:\n"+
-                              "0.Salir\n");
+                              "calcularemos el costo y los servicios que tiene su habitación: \n \n"+
+                              "0. Salir \n");
 
           String opcionUsuario2 = sc.nextLine();
           opcion2 = Integer.parseInt(opcionUsuario2);
           noches = opcion2;
 
-          if (opcion2 == 0){
-            break;
+          if (opcion2 <= 0){
+            System.out.println("No existen noches negativas, ni se pueden pagar 0 " +
+                              "noches. \n");
           }
 
           switch (opcion1) {
@@ -44,8 +45,10 @@ public class ConsolaHoteles{
               hotel = new HotelBasico();
               if (noches >= 5){
                 System.out.println("Costo: " +  hotel.darCosto()*noches*.9);
+              }else if(noches < 5 && noches > 0){
+                System.out.println("Costo: " +  hotel.darCosto()*noches);
               }else{
-              System.out.println("Costo: " +  hotel.darCosto()*noches);
+                break;
               }
               System.out.println("Servicios: " + hotel.darServicios());
               break;
@@ -54,9 +57,11 @@ public class ConsolaHoteles{
               hotel = new HotelBasico();
               hotel = new BasicoPlaya(hotel);
               if (noches > 5){
-                  System.out.println("Costo: " + hotel.darCosto()*noches*.80);
+                System.out.println("Costo: " + hotel.darCosto()*noches*.80);
+              }else if(noches <= 5 && noches > 0){
+                System.out.println("Costo: " + hotel.darCosto()*noches);
               }else{
-              System.out.println("Costo: " + hotel.darCosto()*noches);
+                break;
               }
               System.out.println("Servicios: " + hotel.darServicios());
               break;
@@ -66,9 +71,11 @@ public class ConsolaHoteles{
               hotel = new BasicoPlaya(hotel);
               hotel = new VIPPlaya(hotel);
               if (noches > 4){
-                  System.out.println("Costo: " + hotel.darCosto()*noches*.75);
+                System.out.println("Costo: " + hotel.darCosto()*noches*.75);
+              }else if(noches <= 4 && noches > 0){
+                System.out.println("Costo: " + hotel.darCosto()*noches);
               }else{
-              System.out.println("Costo: " + hotel.darCosto()*noches);
+                break;
               }
               System.out.println("Servicios: " + hotel.darServicios());
               break;
