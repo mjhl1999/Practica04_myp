@@ -1,6 +1,7 @@
+//clase que implementa los metodos del decorator de HotelBasico
 public class BPlayaDecorado extends PlayaDecorator{
 
-	BasicoPlaya playa;
+	HotelBasico playa;
 
 	public BPlayaDecorado(HotelBasico playa){
 		this.playa = playa;

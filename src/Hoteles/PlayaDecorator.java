@@ -1,4 +1,5 @@
-public abstract class PlayaDecorator extends BasicoPlaya{
+//decaretor para hotel BasicoPlaya
+public abstract class PlayaDecorator extends HotelBasico{
 
 	public abstract double darCosto();
 

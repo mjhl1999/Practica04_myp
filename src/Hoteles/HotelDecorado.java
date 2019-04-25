@@ -1,3 +1,4 @@
+//clase que implementa los metodos del decorator de HotelBasico
 public class HotelDecorado extends HotelDecorator{
 
 	HotelBasico basico;
