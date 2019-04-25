@@ -1,16 +1,16 @@
-public abstract class HotelDecorado extends HotelBasico{
+public class HotelDecorado extends HotelDecorator{
 
-	protected HotelBasico basicoDecorado;
+	HotelBasico basico;
 
-	public HotelDecorado(HotelBasico basicoDecorado){
-		this.basicoDecorado = basicoDecorado;
+	public HotelDecorado(HotelBasico basico){
+		this.basico = basico;
 	}
 
 	public double darCosto(){
-		return basicoDecorado.darCosto();
+		return basico.darCosto();
 	}
 
 	public String darServicios(){
-		return basicoDecorado.darServicios();
+		return basico.darServicios();
 	}
 }

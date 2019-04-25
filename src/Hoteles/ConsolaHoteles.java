@@ -47,9 +47,12 @@ public class ConsolaHoteles{
               break;
 
             case 3:
-              //hotelp = new VIPPlaya(hotelp);
-              //hotelp.darHabitacion();
+              hotel = new BasicoPlaya(hotel); 
+              hotel = new VIPPlaya(hotel);
+              System.out.println("Costo: " + hotel.darCosto());
+              System.out.println("servicios: " + hotel.darServicios());
               break;
+
 
             case 0:
               break;

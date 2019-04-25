@@ -1,16 +1,16 @@
-public abstract class BPlayaDecorado extends HotelBasico{
+public class BPlayaDecorado extends PlayaDecorator{
 
-	protected HotelBasico basicoDecorado;
+	BasicoPlaya playa;
 
-	public BPlayaDecorado(HotelBasico basicoDecorado){
-		this.basicoDecorado = basicoDecorado;
+	public BPlayaDecorado(HotelBasico playa){
+		this.playa = playa;
 	}
 
 	public double darCosto(){
-		return basicoDecorado.darCosto();
+		return playa.darCosto();
 	}
 
 	public String darServicios(){
-		return basicoDecorado.darServicios();
+		return playa.darServicios();
 	}
 }

@@ -1,9 +1,9 @@
-public class BasicoPlaya extends HotelDecorado{
+public class BasicoPlaya extends HotelDecorator{
 
 	HotelBasico basico;
 
 	public BasicoPlaya(HotelBasico basico){
-		super(basico);
+		this.basico = basico;
 	}
 
 	public double darCosto(){
